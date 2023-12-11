@@ -1,0 +1,4 @@
+cameras:
+    camera1:
+        type: perspective
+        vanishing_point: [0, -500]

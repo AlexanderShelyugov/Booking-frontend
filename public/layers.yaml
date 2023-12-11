@@ -1,0 +1,33 @@
+layers:
+    earth:
+        data: { source: nextzen }
+        draw:
+            polygons:
+                order: function() { return feature.sort_rank; }
+                color: '#232323'
+
+    water:
+        data: { source: nextzen }
+        draw:
+            polygons:
+                order: function() { return feature.sort_rank; }
+                color: '#436175'
+
+    buildings:
+        data: { source: nextzen }
+        draw:
+            polygons:
+                order: function() { return feature.sort_rank; }
+                color: |
+                    function () {
+                        var h = feature.height || 20;
+                        h = Math.min((h + 50)/ 255, .8); // max brightness: .8
+                        h = Math.max(h, .4); // min brightness: .4
+                        return [h, h, h];
+                    }
+        3d-buildings:
+            filter: { $zoom: { min: 15 } }
+            draw:
+                polygons:
+                    color: [.2, .2, .2]
+                    extrude: function () { return ( $zoom >= 16) || ($zoom >= 15 && feature.height > 20) }

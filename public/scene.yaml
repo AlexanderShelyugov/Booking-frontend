@@ -1,0 +1,15 @@
+import:
+    - cameras.yaml
+    - styles.yaml
+    - layers.yaml
+    - layers-roads.yaml
+    - layers-roads-labels.yaml
+
+sources:
+    nextzen:
+        type: MVT
+        url: https://tile.nextzen.org/tilezen/vector/v1/512/all/{z}/{x}/{y}.mvt
+        url_params:
+          api_key: '_Ynn_ixBRNaLmtWNwIIO3w'
+        tile_size: 512
+        max_zoom: 16

@@ -1,0 +1,7 @@
+styles:
+    flatlines:
+        base: lines
+        lighting: false # ignore lights
+    flatpolys:
+        base: polygons
+        lighting: false # ignore lights

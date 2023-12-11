@@ -1,0 +1,23 @@
+layers:
+    road_labels:
+        data: { source: nextzen, layer: roads }
+        filter: { name: true, aeroway: false, tunnel: false, railway: false, not: { kind: [rail, ferry] } }
+
+        highway:
+            filter: { kind: highway, $zoom: { min: 7 } }
+            draw:
+                text:
+                    font:
+                        fill: '#23C1FF'
+                        weight: 500
+                        size: 12px
+                        family: Helvetica
+        not_highway:
+            filter: { not: { kind: highway }, $zoom: { min: 17 } }
+            draw:
+                text:
+                    font:
+                        fill: '#9A9A9A'
+                        weight: 100
+                        size: 11px
+                        family: Helvetica

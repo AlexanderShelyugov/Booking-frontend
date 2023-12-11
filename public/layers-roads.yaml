@@ -1,0 +1,41 @@
+layers:
+    otherroads:
+        data: { source: nextzen }
+        filter:
+            kind: [path, rail, ferry]
+        draw:
+            lines:
+                order: function() { return feature.sort_rank; }
+                color: '#1E2A56'
+                width: 8
+                cap: round
+
+    roads:
+        data: { source: nextzen }
+        filter:
+            not: { kind: [path, rail, ferry] }
+        draw:
+            lines:
+                order: function() { return feature.sort_rank; }
+                color: '#1E2A56'
+                width: 8
+                cap: round
+        highway:
+            filter:
+                kind: highway
+            draw:
+                lines:
+                    order: function() { return feature.sort_rank; }
+                    color: '#2A0D5D'
+                    width: 12
+                    outline:
+                        color: '#1E2A56'
+                        width: 1.5
+        minor_road:
+            filter:
+                kind: minor_road
+            draw:
+                lines:
+                    order: function() { return feature.sort_rank; }
+                    color: '#1E2A56'
+                    width: 5
