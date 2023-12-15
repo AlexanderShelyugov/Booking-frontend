@@ -26,7 +26,7 @@ export function TangramMap() {
         };
 
         // Инициализируем map внутри useEffect, чтобы избежать конфликтов с возможными перерендерами компонента
-        const map = L.map(mapContainer.current).setView([mapConfig.view.lat, mapConfig.view.lng], mapConfig.view.zoom);
+        const map = L.map(mapContainer.current, { zoomControl: false }).setView([mapConfig.view.lat, mapConfig.view.lng], mapConfig.view.zoom);
 
         // Добавляем слой Tangram к карте
         const tangramLayer = tangram.leafletLayer(mapConfig);
@@ -40,5 +40,5 @@ export function TangramMap() {
         };
     }); // Пустой массив зависимостей, чтобы эффект сработал один раз после монтирования компонента
 
-    return <div className="w-full h-full" ref={mapContainer} />;
+    return <div className="w-full h-full map-canvas" ref={mapContainer} />;
 }

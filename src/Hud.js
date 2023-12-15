@@ -1,6 +1,6 @@
 export default function Hud() {
     return (
-        <div className="grid grid-cols-12 gap-4 grid-rows-[auto,1fr] w-full h-full">
+        <div className="map-ui w-full h-full p-2 grid grid-cols-12 gap-4 grid-rows-[auto,1fr]">
             <div className="col-span-3">
                 <h1 className="bg-green-500">whatever</h1>
             </div>
