@@ -40,5 +40,5 @@ export function TangramMap() {
         };
     }); // Пустой массив зависимостей, чтобы эффект сработал один раз после монтирования компонента
 
-    return <div ref={mapContainer} className="TangramMap" />;
+    return <div className="w-full h-full" ref={mapContainer} />;
 }

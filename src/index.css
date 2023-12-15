@@ -12,8 +12,9 @@ code {
     monospace;
 }
 
-html, body {
-  height: 100%;
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
   margin:0;
   padding: 0;
   overflow: hidden; /* Это предотвратит появление полос прокрутки */

@@ -1,0 +1,16 @@
+.parallax-effect {
+    perspective: 1000px;
+    transform: rotateY(20deg) rotateX(-15deg);
+}
+
+.hologram-effect {
+    background-color: rgba(255, 255, 255, 0.1); /* Легкий оттенок для фона */
+    border: 1px solid rgba(140, 255, 251, 0.5); /* Светящаяся граница */
+    box-shadow: 0 0 15px rgba(140, 255, 251, 0.7), /* Внешнее свечение */
+                 0 0 20px rgba(140, 255, 251, 0.5) inset; /* Внутреннее свечение */
+    color: #8cffee; /* Цвет текста */
+    text-shadow: 0 0 10px #8cffee, /* Свечение текста */
+                 0 0 20px #8cffee,
+                 0 0 30px #8cffee, /* Третий слой свечения для текста */
+                 0 0 40px #8cffee; /* Четвертый слой свечения для текста */
+  }
