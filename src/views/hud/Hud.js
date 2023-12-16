@@ -1,4 +1,5 @@
 import { SearchInput, TextInput } from 'evergreen-ui'
+import LocationSearchResults from './LocationSearchResults'
 
 export default function Hud() {
     return (
@@ -7,7 +8,9 @@ export default function Hud() {
                 <SearchInput placeholder="Location" />
                 <TextInput name="text-input-name" placeholder="Text input placeholder..." />
             </div>
-            <div className="w-128 max-w-xl h-full rounded-md bg-green-500">Search results</div>
+            <div className="w-128 max-w-xl h-full rounded-md bg-purple-950">
+                <LocationSearchResults />
+            </div>
         </div>
     )
 }

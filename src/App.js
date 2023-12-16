@@ -1,13 +1,13 @@
 import './App.css';
-import { TangramMap } from './Map.js';
-import Hud from './Hud.js';
+import { TangramMap } from './views/map/Map.js';
+import Hud from './views/hud/Hud';
 import './tailwind.css';
 import './map-layout.css';
 
 
 function App() {
   return (
-    <div className="w-full h-full">
+    <div className="w-screen h-screen">
       <TangramMap />
       <Hud />
     </div>
