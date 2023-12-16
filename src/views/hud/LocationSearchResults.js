@@ -5,8 +5,8 @@ export default function LocationSearchResults() {
         return state.locationResults.places
     })
 
-    const placeViews = places.map((place, index) =>
-        <li key={place.id}>{place.location}</li>
+    const placeViews = places.map((place) =>
+        <li key={place.id} className="location-item">{place.location}</li>
     )
 
     return (<ul>{placeViews}</ul>)

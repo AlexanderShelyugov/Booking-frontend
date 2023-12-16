@@ -10,3 +10,11 @@
 #map-ui * {
     pointer-events: auto;
 }
+
+li.location-item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.location-item {
+    background-color: white;
+}
