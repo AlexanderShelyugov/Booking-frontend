@@ -13,10 +13,7 @@ export const counterSlice = createSlice({
     name: 'locations-search-results',
     initialState,
     extraReducers: (builder) => {
-        // Add reducers for additional action types here, and handle loading state as needed
         builder.addCase(searchBy.fulfilled, (state, action) => {
-            // Add user to the state array
-            console.log(action)
             let places = action.payload.map((item) => {
                 return {
                     id: item.place_id,
