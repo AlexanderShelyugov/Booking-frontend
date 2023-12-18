@@ -1,8 +1,9 @@
-import './App.css';
-import { TangramMap } from './views/map/Map.js';
-import Hud from './views/hud/Hud';
-import './tailwind.css';
-import './map-layout.css';
+import './App.css'
+import { TangramMap } from './views/map/Map.js'
+import Hud from './views/hud/Hud'
+import './tailwind.css'
+import './map-layout.css'
+import './hud.css'
 
 
 function App() {

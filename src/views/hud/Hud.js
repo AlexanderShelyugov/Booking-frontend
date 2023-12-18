@@ -12,7 +12,7 @@ export default function Hud() {
     }, 500, { 'trailing': true })
 
     return (
-        <div id="map-ui" className="map-ui">
+        <div id="map-ui">
             <SearchInput
                 className="w-full h-12"
                 placeholder="Search"

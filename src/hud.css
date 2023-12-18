@@ -1,0 +1,30 @@
+#map-ui {
+    @apply absolute top-0 left-0 pointer-events-none w-96 h-full flex flex-col pl-2 pt-2;
+    z-index: 400
+}
+
+#map-ui * {
+    pointer-events: auto;
+}
+
+.search-results-list {
+    @apply bg-zinc-700 overflow-y-auto
+}
+
+.location-item {
+    @apply bg-gray-800 text-slate-500 w-full h-16 truncate
+}
+
+.location-item:not(:last-child) {
+    border-bottom: 1px solid;
+    @apply divide-slate-700
+}
+
+.location-item a {
+    @apply h-full flex text-lg items-center p-2 duration-300 ease-in-out
+}
+
+.location-item a:hover {
+    @apply text-slate-200;
+    background-color: #596B93;
+}
