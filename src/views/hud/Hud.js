@@ -12,17 +12,13 @@ export default function Hud() {
     }, 500, { 'trailing': true })
 
     return (
-        <div id="map-ui" className="map-ui w-full h-full p-2">
-            <div className="flex flex-col gap-2 w-128 max-w-xl h-full">
-                <SearchInput
-                    className="w-full"
-                    placeholder="Location"
-                    onChange={onQueryInput}
-                />
-                <div className="h-full rounded-md bg-purple-950 p-4 px-6">
-                    <LocationSearchResults />
-                </div>
-            </div>
+        <div id="map-ui" className="map-ui">
+            <SearchInput
+                className="w-full h-12"
+                placeholder="Search"
+                onChange={onQueryInput}
+            />
+            <LocationSearchResults />
         </div>
     )
 }

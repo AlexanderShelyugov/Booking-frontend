@@ -2,11 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 import { searchBy } from '../nominatim/query'
 
 const initialState = {
-    places: [
-        { id: 1, location: 'Avenue 1' },
-        { id: 2, location: 'Street 2' },
-        { id: 3, location: 'Square 3' },
-    ]
+    places: []
 }
 
 export const counterSlice = createSlice({

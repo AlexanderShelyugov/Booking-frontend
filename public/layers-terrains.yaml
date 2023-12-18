@@ -1,6 +1,27 @@
+styles:
+    terrain-envmap:
+        base: raster
+        lighting: false
+        raster: normal
+        shaders:
+            uniforms:
+                u_scale: .15
+                u_envmap: ../img/imhof5.jpg
+            blocks:
+                global: |
+                    // Simplified view-independent environment map
+                    vec4 applyEnvmap (in sampler2D _tex, in vec3 _normal) {
+                        vec2 uv = 0.5 * _normal.xy + 0.5;
+                        return texture2D(_tex, uv);
+                    }
+                color: |
+                    normal.z *= u_scale;
+                    normal = normalize(normal);
+                    color = applyEnvmap(u_envmap, normal);
+
 layers:
     terrain:
-        data: { source: nextzen-terrain }
+        data: { source: nextzen-terrain, layer: _default }
         draw:
-            raster:
-                order: 0 # draw on bottom
+            terrain-envmap:
+                order: 1

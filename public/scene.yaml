@@ -1,23 +1,8 @@
 import:
+    - sources.yaml
     - cameras.yaml
     - styles.yaml
     - layers-terrains.yaml
     - layers.yaml
     - layers-roads.yaml
     - layers-roads-labels.yaml
-
-sources:
-    nextzen-terrain:
-        type: Raster
-        url: https://tile.nextzen.org/tilezen/terrain/v1/{tilesize}/terrarium/{z}/{x}/{y}.png
-        url_params:
-          api_key: '_Ynn_ixBRNaLmtWNwIIO3w'
-        tile_size: 512
-        max_zoom: 16
-    nextzen:
-        type: MVT
-        url: https://tile.nextzen.org/tilezen/vector/v1/512/all/{z}/{x}/{y}.mvt
-        url_params:
-          api_key: '_Ynn_ixBRNaLmtWNwIIO3w'
-        tile_size: 512
-        max_zoom: 16

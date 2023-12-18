@@ -5,9 +5,15 @@ export default function LocationSearchResults() {
         return state.locationResults.places
     })
 
-    const placeViews = places.map((place) =>
-        <li key={place.id} className="location-item">{place.location}</li>
+    if (places.length <= 0) return (null)
+
+    const placeViews = !places ? [] : places.map((place) =>
+        <li key={place.id} className="location-item h-24">
+            <a href="#">{place.location}</a>
+        </li>
     )
 
-    return (<ul>{placeViews}</ul>)
+    return (
+        <ul className="search-results-list h-full pt-8 pd-4">{placeViews}</ul>
+    )
 }
