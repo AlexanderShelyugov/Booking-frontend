@@ -1,16 +1,15 @@
 import { useSelector } from 'react-redux'
+import LocationListItem from './LocationListItem'
 
 export default function LocationSearchResults() {
     const places = useSelector((state) => {
         return state.locationResults.places
     })
 
-    if (places.length <= 0) return (null)
+    if (!places || places.length <= 0) return (null)
 
-    const placeViews = !places ? [] : places.map((place) =>
-        <div key={place.id} className="location-item h-24">
-            <a href="#">{place.location}</a>
-        </div>
+    const placeViews = places.map(
+        (place) => <LocationListItem place={place} />
     )
 
     return (
