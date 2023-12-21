@@ -1,6 +1,6 @@
 import { SearchInput } from 'evergreen-ui'
 import LocationSearchResults from './LocationSearchResults'
-import { searchByQuery } from '../../store/features/search/location-results/searchResults'
+import { searchByQuery } from '../../store/features/search/location-results'
 import { useDispatch } from 'react-redux'
 import _ from 'lodash'
 
