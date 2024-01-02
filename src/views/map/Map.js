@@ -1,8 +1,8 @@
-import React, { useRef, useEffect } from 'react';
-import L from 'leaflet';
-import tangram from 'tangram';
+import React, { useRef, useEffect } from 'react'
+import L from 'leaflet'
+import tangram from 'tangram'
 
-import 'leaflet/dist/leaflet.css';
+import 'leaflet/dist/leaflet.css'
 
 export function TangramMap() {
     const mapContainer = useRef(null);

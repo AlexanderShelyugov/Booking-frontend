@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TypeWriter';
+    src: url('fonts/typewriter.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Handwriting';
+    src: url('fonts/handwriting.ttf') format('truetype');
+}

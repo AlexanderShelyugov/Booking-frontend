@@ -1,0 +1,8 @@
+.dotted-underline {
+    border: none;
+    border-bottom: 5px dotted #352818;
+    outline: none;
+    padding: 5px;
+    background-color: transparent;
+    font-family: 'TypeWriter', sans-serif;
+}

@@ -1,8 +1,8 @@
-import { SearchInput } from 'evergreen-ui'
-import LocationSearchResults from './LocationSearchResults'
-import { searchByQuery } from '../../store/features/search/location-results'
 import { useDispatch } from 'react-redux'
 import _ from 'lodash'
+
+import LocationSearchResults from './LocationSearchResults'
+import { searchByQuery } from 'store/features/search/location-results'
 
 export default function Hud() {
     const dispatch = useDispatch()
@@ -13,8 +13,8 @@ export default function Hud() {
 
     return (
         <div id="map-ui">
-            <SearchInput
-                className="w-full h-12"
+            <input type="text"
+                className="w-full h-12 dotted-underline"
                 placeholder="Search"
                 onChange={onQueryInput}
             />
