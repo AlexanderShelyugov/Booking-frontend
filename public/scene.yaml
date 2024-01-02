@@ -1,8 +1,7 @@
 import:
+    - refill-style.zip
     - sources.yaml
     - cameras.yaml
     - styles.yaml
-    - layers-terrains.yaml
     - layers.yaml
     - layers-roads.yaml
-    - layers-roads-labels.yaml

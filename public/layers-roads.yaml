@@ -6,7 +6,7 @@ layers:
         draw:
             lines:
                 order: function() { return feature.sort_rank; }
-                color: '#1E2A56'
+                color: '#DBCDB7'
                 width: 8
                 cap: round
 
@@ -17,7 +17,7 @@ layers:
         draw:
             lines:
                 order: function() { return feature.sort_rank; }
-                color: '#1E2A56'
+                color: '#DBCDB7'
                 width: 8
                 cap: round
         highway:
@@ -26,7 +26,7 @@ layers:
             draw:
                 lines:
                     order: function() { return feature.sort_rank; }
-                    color: '#2A0D5D'
+                    color: '#3B371B'
                     width: 12
                     outline:
                         color: '#1E2A56'
