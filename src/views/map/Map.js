@@ -40,5 +40,5 @@ export function TangramMap() {
         };
     }); // Пустой массив зависимостей, чтобы эффект сработал один раз после монтирования компонента
 
-    return <div className="map-canvas" ref={mapContainer} />
+    return <div className="map-canvas" tabindex="-1" ref={mapContainer} />
 }
