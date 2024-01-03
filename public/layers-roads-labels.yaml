@@ -11,7 +11,7 @@ layers:
                         fill: '#23C1FF'
                         weight: 500
                         size: 12px
-                        family: Roboto
+                        family: Typographic
         not_highway:
             filter: { not: { kind: highway }, $zoom: { min: 17 } }
             draw:
@@ -20,4 +20,4 @@ layers:
                         fill: '#9A9A9A'
                         weight: 100
                         size: 11px
-                        family: Roboto
+                        family: Typographic

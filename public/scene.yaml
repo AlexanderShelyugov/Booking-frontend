@@ -1,5 +1,5 @@
 import:
-    - refill-style.zip
+    - refill-style.yaml
     - sources.yaml
     - cameras.yaml
     - styles.yaml

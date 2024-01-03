@@ -7,3 +7,8 @@
     font-family: 'Handwriting';
     src: url('fonts/handwriting.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Typographic';
+    src: url('fonts/typographic.otf') format('opentype');
+}
